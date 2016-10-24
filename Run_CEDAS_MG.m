@@ -1,4 +1,4 @@
-%% Wrapper to demo CEDAS algorithm on Mackey Glass data streams.
+1%% Wrapper to demo CEDAS algorithm on Mackey Glass data streams.
 
 clear
 clear functions
@@ -34,7 +34,7 @@ for idx1=1001:size(DataIn,1)
         sprintf('Mean Time %4f',toc/idx1)
     end
     Data=DataMG(idx1,:);
-    [Clusters]=CEDAS_Funct([Radius,MinThreshold, Fade],Data);
+    [Clusters]=CEDAS_Pre2015b([Radius,MinThreshold, Fade],Data);
 
     %% Plot data and micro-clusters
     if idx1/PlotSpeed==floor(idx1/PlotSpeed) & ~isempty(Clusters)
