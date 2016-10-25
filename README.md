@@ -17,4 +17,5 @@ The data file M-G_3Dx2.csv contains a data stream consisting of 2 Mackey-Glass d
 
 Run_CEDAS_MG.m reads the Mackey-Glass data and applies the CEDAS algorithm on every sample. The micro-clusters are displayed as sphere's, coloured by their macro-clusters. The macro-clusters can be seen to marge and separate.
 
+### Other files
 distinguishable_colours is not the work of the CEDAS author. For full details see the headers in the file. It is available for downlaod from Matlab's file exchange.
