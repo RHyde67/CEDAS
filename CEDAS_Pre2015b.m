@@ -1,4 +1,4 @@
-function [ ClustersOut ] = CEDAS_Funct( varargin )
+function [ ClustersOut ] = CEDAS_Pre2015b( varargin )
 %CEDAS_FUNCT
 % CEDAS: Clustering of Evolving Data-streams into Arbitrary Shapes
 % © R Hyde 2016
