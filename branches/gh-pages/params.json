@@ -1,0 +1,6 @@
+{
+  "name": "CEDAS",
+  "tagline": "CEDAS: Clustering of Evolving Data-streams into Arbitrary Shapes",
+  "body": "# CEDAS\r\nClustering of Evolving Data-streams into Arbitrary Shapes\r\n\r\nR. Hyde, P. Angelov, A.R. MacKenzie, Fully Online Clustering of Evolving Data Streams into Arbitrarily Shaped Clusters, submitted to Information Sciences, accepted for publication subject ot minor revision, Oct 2016.\r\n\r\nTwo version of Matlab code are available:\r\n\r\n1. Pre-2015b uses proprietry code to maintain minimal graph structure of the micro-clusters.\r\n\r\n2. Post 2015b uses Matlab's 'graph' function to maintain a full micro-cluster graph structure.\r\n\r\nThe second version runs slightly slower but allows for detailed display of the micro-cluster graph and supplies additional information that may be used for future applications of the CEDAS algorithm.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
