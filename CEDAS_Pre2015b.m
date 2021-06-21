@@ -1,7 +1,7 @@
 function [ ClustersOut ] = CEDAS_Pre2015b( varargin )
 %CEDAS_FUNCT
 % CEDAS: Clustering of Evolving Data-streams into Arbitrary Shapes
-% © R Hyde 2016
+% Â© R Hyde 2016
 % Released under the GNU GPLver3.0
 % This version runs on Matlab versions prior to 2015b as it does not utilise Matlab's
 % 'graph' functions.
@@ -147,8 +147,10 @@ function CEDAS_Update_Graph()
     [Intersect,~]=find(DistToAll<Rads); % find where cluster centres are closer than sum of radii
     clusters.Edge(ClusterChanged)={unique([clusters.Edge{ClusterChanged},Intersect'])};
     GN=min(clusters.Macro(clusters.Edge{ClusterChanged}));
-    clusters.Macro(ClusterChanged)=GN;
-    clusters.Macro(clusters.Edge{ClusterChanged})=GN;
+    if ~isempty(GN)
+        clusters.Macro(ClusterChanged)=GN;
+        clusters.Macro(clusters.Edge{ClusterChanged})=GN;
+    end
 
 end % End CEDAS Update Graph
 
